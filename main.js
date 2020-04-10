@@ -41,7 +41,7 @@ switch (getUrlParam('mode')) {
             updateLivesView();
             if (lives <= 0) {
               alert('У Вас закончились жизни!');
-              window.location = '/english/';
+              window.location = 'index.html';
             }
           }
         }
@@ -91,7 +91,7 @@ for (var i = 0; i < options.length; i++) {
       e.target.classList.add('false', 'avoid-clicks');
       if (lives === 0) {
         alert('Вы проиграли, Ваш счет: ' + score);
-        window.location = '/english/';
+        window.location = 'index.html';
       }
     }
   });
